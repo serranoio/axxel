@@ -1,0 +1,71 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+}
+
+body {
+  background-color:  BLACK;
+
+}
+
+h1 {
+  background-image: linear-gradient(to right, #8DB7CE, #3A7392, #3A7392, #236284, #124A68);
+  background-clip: text;
+  color: transparent;
+  font-size: 42px;
+  text-align: center;
+
+  animation: step 2s infinite alternate;
+
+  -webkit-text-stroke: 4px  #c4d5de;
+  /* -webkit-text-stroke: 4px  #9db9c9; */
+  /* text-stroke: 2px white; */
+}
+
+        
+@keyframes step {
+  from {
+      transform: scale(1) translateY(0);
+      /* font-size: 42px; */
+  }
+
+  to {
+      transform: scale(1.5) translateY(-50px);
+    /* font-size: 50px; */
+    }
+}
+
+
+#four {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 150px;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  width: 2px;
+  height: 2px;
+}
+
+
+
+
+.player {
+  width: 50px;
+  height: 10px;
+  background-color: blue;
+  position: absolute;
+  transition: all .1s;
+}
+
+
+.bullet {
+  background-color: green;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+}
